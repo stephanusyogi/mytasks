@@ -29,7 +29,7 @@ function Sidebar() {
   }
   const { signOut } = useClerk()
   return (
-    <SidebarStyled theme={theme} collapsed={collapsed ? 1 : 0}>
+    <SidebarStyled theme={theme} collapsed={collapsed ? collapsed : undefined}>
       <button className="toggle-nav" onClick={collapseMenu}>
         {collapsed ? bars : arrowLeft}
       </button>
